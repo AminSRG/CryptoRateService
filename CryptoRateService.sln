@@ -13,32 +13,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.ApplicationLayer", "03.A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.ApiLayer", "04.ApiLayer", "{8B854A2B-FA39-4ADA-AC91-ACF43316B275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{54594EDD-F271-4B6A-854D-F4EE750BBF6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{54594EDD-F271-4B6A-854D-F4EE750BBF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{41FEB48D-C8C1-42A7-9FEA-F9F7570C9ECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{41FEB48D-C8C1-42A7-9FEA-F9F7570C9ECC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{54594EDD-F271-4B6A-854D-F4EE750BBF6B} = {54594EDD-F271-4B6A-854D-F4EE750BBF6B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integrations", "Integrations\Integrations.csproj", "{4A4600F4-3CF1-43C4-A251-804CFECB5EBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrations", "Integrations\Integrations.csproj", "{4A4600F4-3CF1-43C4-A251-804CFECB5EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "ApplicationLayer\Application.csproj", "{D040B3E2-1787-4A5E-BF6E-BBFB74344A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "ApplicationLayer\Application.csproj", "{D040B3E2-1787-4A5E-BF6E-BBFB74344A40}"
 	ProjectSection(ProjectDependencies) = postProject
 		{41FEB48D-C8C1-42A7-9FEA-F9F7570C9ECC} = {41FEB48D-C8C1-42A7-9FEA-F9F7570C9ECC}
 		{4A4600F4-3CF1-43C4-A251-804CFECB5EBD} = {4A4600F4-3CF1-43C4-A251-804CFECB5EBD}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{B555B596-2E84-4C67-BC4F-97417993AE98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{B555B596-2E84-4C67-BC4F-97417993AE98}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D040B3E2-1787-4A5E-BF6E-BBFB74344A40} = {D040B3E2-1787-4A5E-BF6E-BBFB74344A40}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5C3B588C-ADE2-414B-B631-DE8830649BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{DBA59E40-852C-4279-BCAB-21DCF716C1FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{DBA59E40-852C-4279-BCAB-21DCF716C1FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52C77C92-9CEF-4A19-A515-29934DA2F580}"
 	ProjectSection(SolutionItems) = preProject
+		AnswersToTechnicalQuestions.md = AnswersToTechnicalQuestions.md
 		README.md = README.md
 	EndProjectSection
 EndProject
