@@ -34,7 +34,6 @@ Retrieves the exchange rates for the specified cryptocurrency symbol.
 - **200 OK**: Successfully retrieved exchange rates.
 - **400 Bad Request**: If the symbol is null or empty.
 - **401 Unauthorized**: If authentication fails.
-- **404 Not Found**: If no exchange rates are found for the symbol.
 - **500 Internal Server Error**: If an unexpected error occurs.
 
 #### Response Details:

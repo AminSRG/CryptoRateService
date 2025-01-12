@@ -25,14 +25,12 @@ namespace CryptoRateService.WebApi.Controllers
         /// <response code="200">Returns the exchange rates</response>
         /// <response code="400">If the symbol is null or empty</response>
         /// <response code="401"></response>
-        /// <response code="404">If no exchange rates are found for the symbol</response>
         /// <response code="500">If an unexpected error occurs</response>
         [HttpPost]
         [SwaggerOperation(Summary = "Get exchange rates for a cryptocurrency symbol")]
         [SwaggerResponse(200, "Successfully retrieved exchange rates", typeof(List<ExchangeRateOutVm>))]
         [SwaggerResponse(400, "Invalid symbol provided")]
         [SwaggerResponse(401)]
-        [SwaggerResponse(404, "No exchange rates found for the symbol")]
         [SwaggerResponse(500, "Internal server error")]
         public async Task<IActionResult> GetCryptoRates([FromBody] CryptoRatesInBodyVm request)
         {
